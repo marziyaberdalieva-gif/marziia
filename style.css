@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #413670,
+        #614171
+    );
+}
+
+
+/* Главный блок */
+
+.container {
+    width: 900px;
+    max-width: 92%;
+
+    display: flex;
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(50, 40, 80, 0.18);
+}
+
+
+/* Левая сторона */
+
+.welcome {
+    width: 42%;
+
+    padding: 60px 45px;
+
+    color: white;
+
+    background: linear-gradient(
+        145deg,
+        #6156d9,
+        #9860d3
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome h1 {
+    font-size: 48px;
+
+    margin-bottom: 25px;
+}
+
+.welcome p {
+    font-size: 27px;
+
+    margin-bottom: 15px;
+}
+
+.welcome span {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    opacity: 0.9;
+}
+
+.symbol {
+    margin-top: 60px;
+
+    font-size: 90px;
+
+    text-align: center;
+
+    opacity: 0.5;
+}
+
+
+/* Правая сторона */
+
+.form {
+    width: 58%;
+
+    padding: 50px;
+}
+
+.form h2 {
+    font-size: 32px;
+
+    color: #29233a;
+
+    margin-bottom: 8px;
+}
+
+.under {
+    color: #999;
+
+    margin-bottom: 30px;
+}
+
+
+/* Поля */
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #484252;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: #fafafa;
+}
+
+input:focus {
+    border-color: #7468dc;
+
+    background: white;
+}
+
+
+/* Согласие */
+
+.agree {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin: 5px 0 22px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+.agree input {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* Кнопка */
+
+button {
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #665bd8,
+        #945bd0
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(100, 80, 200, 0.25);
+}
+
+
+/* Вход */
+
+.login {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+.login a {
+    color: #6559d5;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Телефон */
+
+@media (max-width: 700px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .welcome {
+        width: 100%;
+
+        padding: 35px;
+
+        text-align: center;
+    }
+
+    .welcome h1 {
+        font-size: 38px;
+    }
+
+    .symbol {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+
+        padding: 35px 25px;
+    }
+}
